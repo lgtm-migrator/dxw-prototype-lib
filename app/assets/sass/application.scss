@@ -17,6 +17,9 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
+@import "helpers/colours";
+
+
 // Add your specific styles here. Ideally folders so that it won't affect others
 
 @import "exercises/apply-renew-passport/index";
@@ -25,11 +28,18 @@ $govuk-assets-path: '/govuk/assets/';
 
 
 // Add general styles for this website here
-
 code {
     font-family: monospace,monospace;
     font-size: 1em;
     padding: 0 5px;
     color: govuk-colour("red");
     background-color: govuk-colour("light-grey");
+}
+
+.dpl-header {
+    background: $navy;   
+}
+
+.dpl-header-container {
+    border-bottom: 10px solid $red-light;
 }
