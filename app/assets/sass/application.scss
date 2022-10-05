@@ -22,9 +22,10 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Add your specific styles here. Ideally folders so that it won't affect others
 
-@import "exercises/apply-renew-passport/index";
-//@import "exercises/";
+
 //@import "examples/";
+@import "exercises/apply-renew-passport/index";
+@import "exercises/apply-renew-passport/apply-renew-passport-ming";
 
 
 // Add general styles for this website here
