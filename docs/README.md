@@ -18,7 +18,6 @@ In a separate session (new tab in terminal) Run the app `npm start`
 
 &nbsp;
 &nbsp;
-&nbsp;
 
 ## How to add my exercise page(s)
 
@@ -41,7 +40,7 @@ Attach the link of your file or index page in the content area of the exercise i
 &nbsp;
 &nbsp;
 
-## How to add a CSS class to my own exercise
+## How to add custom CSS classes to my own exercise
 
 ### 1. Where to add your file:
 Add your own SASS file to the directory `app/assets/sass/exercises/[exercise directory]/`. 
