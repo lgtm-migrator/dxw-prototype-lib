@@ -1,0 +1,105 @@
+{% from "govuk/components/inset-text/macro.njk" import govukInsetText %}
+
+{% extends "layout.html" %}
+
+{% set bodyClasses = "exercise-apply-renew-passport-beth" %}
+
+
+{% block pageTitle %}
+  Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Passports, travel and living abroad</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Passports</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Apply online for a UK passport
+      </h1>
+
+      <p>Use this service to apply for, renew, replace or update your passport and pay for it online.</p>
+      <p>This service is also available <a href=""> in Welsh (Cymraeg).</a></p>
+     
+      {{ govukInsetText({
+        text: "If your passport is burgundy or has ‘European Union’ on the cover, you can continue to use it until it expires."
+      }) }}
+
+      <h2 class="govuk-heading-m">How long it takes</h2>
+      <p><a href="#">Check how long it will take to get a passport</a> before you apply.</p>
+      <p>If you need a passport urgently, you can<a href="#"> find out more about the Online Premium or 1 week Fast Track services</a>.</p>
+      <p>Do not book travel until you have a valid passport - your new passport will not have the same number as your old one.</p>
+
+      <h2 class="govuk-heading-m">Before you start</h2>
+      <p>You’ll need a debit or credit card to use this service.</p>
+      <p><a href="#">It’s £9.50 cheaper</a> to apply for a passport online than by post.</p>
+      
+
+      
+      {{ govukButton({
+        text: "Start now",
+        href: "/enter-crn",
+        isStartButton: true
+      }) }}
+
+      <h2 class="govuk-heading-m">Other ways to apply</h2>
+      <p>You can pick up passport application forms from your <a href="">local Post Office</a> and apply by post, or use the <a href="">Post Office Check and Send service.</a></p>
+      <p>It takes longer to apply by post than online.</p>   
+    
+      <h2 class="govuk-heading-s homepage__section-border--top">Explore the topic</h2>
+      <p class="govuk-body-s"><b><a href="">Passports</a></b></p>
+      
+    
+    
+    </div>
+
+      <div class="govuk-grid-column-one-third">
+        <h2 class="govuk-heading-s homepage__section-border--top">Related content</h2>
+        <ul class="govuk-list">
+          <li>
+            <a class="govuk-body-s govuk-link" href="#">Passport fees</a>
+          </li>
+          <li>
+            <a class="govuk-body-s govuk-link" href="#">Get a passport photo</a>
+          </li>
+          <li>
+            <a class="govuk-body-s govuk-link" href="#">Change your name or personal details on your passport</a>
+          </li>
+          <li>
+            <a class="govuk-body-s govuk-link" href="#">Getting your first adult passport</a>
+          </li>
+          <li>
+            <a class="govuk-body-s govuk-link" href="#">Get a passport for your child</a>
+          </li>
+          <li>
+            <a class="govuk-body-s govuk-link" href="#">Visiting the EU, Switzerland, Norway, Iceland or Liechtenstein</a>
+          </li>
+        </ul>
+      </div>
+      
+  
+
+
+   
+  </div>
+{% endblock %}
